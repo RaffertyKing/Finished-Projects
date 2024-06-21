@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Simple Calculator</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Simple Calculator</h1>
+        <form name="calculator">
+            <input type="text" name="screen" id="screen" readonly>
+            <table>
+                <tr>
+                    <td><input type="button" value="7" onclick="calculator.screen.value += '7'"></td>
+                    <td><input type="button" value="8" onclick="calculator.screen.value += '8'"></td>
+                    <td><input type="button" value="9" onclick="calculator.screen.value += '9'"></td>
+                    <td><input type="button" value="/" onclick="calculator.screen.value += '/'"></td>
+                </tr>
+                <tr>
+                    <td><input type="button" value="4" onclick="calculator.screen.value += '4'"></td>
+                    <td><input type="button" value="5" onclick="calculator.screen.value += '5'"></td>
+                    <td><input type="button" value="6" onclick="calculator.screen.value += '6'"></td>
+                    <td><input type="button" value="*" onclick="calculator.screen.value += '*'"></td>
+                </tr>
+                <tr>
+                    <td><input type="button" value="1" onclick="calculator.screen.value += '1'"></td>
+                    <td><input type="button" value="2" onclick="calculator.screen.value += '2'"></td>
+                    <td><input type="button" value="3" onclick="calculator.screen.value += '3'"></td>
+                    <td><input type="button" value="-" onclick="calculator.screen.value += '-'"></td>
+                </tr>
+                <tr>
+                    <td><input type="button" value="0" onclick="calculator.screen.value += '0'"></td>
+                    <td><input type="button" value="." onclick="calculator.screen.value += '.'"></td>
+                    <td><input type="button" value="C" onclick="calculator.screen.value = ''"></td>
+                    <td><input type="button" value="+" onclick="calculator.screen.value += '+'"></td>
+                </tr>
+                <tr>
+                    <td><input type="button" value="(" onclick="calculator.screen.value += '('"></td>
+                    <td><input type="button" value=")" onclick="calculator.screen.value += ')'"></td>
+                    <td colspan="2"><input type="button" value="=" onclick="calculator.screen.value = eval(calculator.screen.value)"></td>
+                </tr>
+            </table>
+        </form>
+    </body>
+</html>
